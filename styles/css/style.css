@@ -84,8 +84,41 @@ img {
   grid-template-columns: 1fr;
   gap: 1rem;
 }
-.grid section {
-  padding: 0.25rem 0.5rem;
+.grid__section {
+  position: relative;
+  padding: 0.25rem 0.75rem;
+}
+.grid__section::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  border-radius: 1rem;
+  left: 0;
+  top: 0;
+}
+.grid__section:nth-child(5n)::before {
+  background-color: var(--green-clr);
+}
+.grid__section:nth-child(5n+1)::before {
+  background-color: var(--yellow-clr);
+}
+.grid__section:nth-child(5n+2)::before {
+  background-color: var(--pink-clr);
+}
+.grid__section:nth-child(5n+3)::before {
+  background-color: var(--purple-clr);
+}
+.grid__section:nth-child(5n+4)::before {
+  background-color: var(--blue-clr);
+}
+.grid__section-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.grid__section-text {
+  color: var(--black-clr);
+  margin-top: 0.375rem;
 }
 @media only screen and (min-width: 48rem) {
   .grid {
@@ -105,6 +138,58 @@ details > summary::-webkit-details-marker {
 }
 details > summary h2 {
   display: inline;
+}
+
+.main-content > * + * {
+  margin-top: 1rem;
+}
+.main-content__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.main-content__section__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.main-content__section__paragraph {
+  color: var(--black-clr);
+}
+.main-content__section__figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content__section__images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 20rem) {
+  .main-content__section__images-container {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .main-content__section__images-container {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .main-content__section {
+    flex-direction: row;
+  }
+  .main-content__section:nth-child(even) {
+    flex-flow: row-reverse;
+  }
+  .main-content__section > *:nth-child(1) {
+    width: 60%;
+  }
+  .main-content__section > *:nth-child(2) {
+    width: 40%;
+  }
 }
 
 .footer {

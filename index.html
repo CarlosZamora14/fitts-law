@@ -46,44 +46,57 @@
     </div>
   </details>
 
-  <main>
-    <section id="what-is">
-      <h2>What is Fitts's Law?</h2>
-      <p>
-        Fitts's Law is a fundamental concept in human-computer interaction (HCI) that revolutionized the way designers
-        think about user interface design. Developed by psychologist Paul Fitts in 1954, this law provides a
-        mathematical
-        model for predicting the time required to move a pointing device, such as a mouse or a finger, to a specific
-        target on
-        ascreen. It's a foundational principle that underlies the design of user-friendly interfaces in both software
-        and
-        hardware.
-      </p>
-      <img src="./images/fitts-law.jpg">
+  <main class="main-content">
+    <section id="what-is" class="main-content__section">
+      <div class="main-content__section__body">
+        <h2 class="main-content__section__title">What is Fitts's Law?</h2>
+        <p class="main-content__section__paragraph">
+          Fitts's Law is a fundamental concept in human-computer interaction (HCI) that revolutionized the way designers
+          think about user interface design. Developed by psychologist Paul Fitts in 1954, this law provides a
+          mathematical
+          model for predicting the time required to move a pointing device, such as a mouse or a finger, to a specific
+          target on
+          ascreen. It's a foundational principle that underlies the design of user-friendly interfaces in both software
+          and
+          hardware.
+        </p>
+      </div>
+      <figure class="main-content__section__figure">
+        <img src="./images/fitts-law.jpg" class="main-content__section__img">
+      </figure>
     </section>
-    <section id="key-concepts">
-      <h2>Key Concepts</h2>
-      <p>
-        At the core of Fitts's Law are two key concepts: the "Index of Difficulty" (ID) and "Movement Time" (MT). ID is
-        a
-        measure of the task's complexity and is calculated based on the target's size and distance. A larger target or a
-        closer target results in a lower ID, signifying an easier task. MT, on the other hand, represents the time it
-        takes
-        to complete the pointing movement accurately. The law's formula combines these concepts to predict how long it
-        will
-        take to perform a pointing task.
-      </p>
-      <img src="images/formula-id.png">
-      <img src="images/formula-mt.png">
+    <section id="key-concepts" class="main-content__section">
+      <div class="main-content__section__body">
+        <h2 class="main-content__section__title">Key Concepts</h2>
+        <p class="main-content__section__paragraph">
+          At the core of Fitts's Law are two key concepts: the "Index of Difficulty" (ID) and "Movement Time" (MT). ID
+          is
+          a
+          measure of the task's complexity and is calculated based on the target's size and distance. A larger target or
+          a
+          closer target results in a lower ID, signifying an easier task. MT, on the other hand, represents the time it
+          takes
+          to complete the pointing movement accurately. The law's formula combines these concepts to predict how long it
+          will
+          take to perform a pointing task.
+        </p>
+      </div>
+      <div class="main-content__section__images-container">
+        <figure class="main-content__section__figure">
+          <img src="./images/formula-id.png" class="main-content__section__img">
+        </figure>
+        <figure class="main-content__section__figure">
+          <img src="./images/formula-mt.png" class="main-content__section__img">
+        </figure>>
+      </div>
     </section>
     <section>
       <h2 id="more-details">More details on Fitts's Law</h2>
       <div class="grid">
-
-
-        <section id="speed-accuracy">
-          <h2>Speed-Accuracy Trade-Off</h2>
-          <p>One of the critical implications of Fitts's Law is the trade-off between speed and accuracy. It highlights
+        <section id="speed-accuracy" class="grid__section">
+          <h2 class="grid__section-heading">Speed-Accuracy Trade-Off</h2>
+          <p class="grid__section-text">One of the critical implications of Fitts's Law is the trade-off between speed
+            and accuracy. It highlights
             that
             as
             the target size increases, movement speed can also increase. However, this may come at the cost of reduced
@@ -93,9 +106,9 @@
             This
             trade-off is central to designing interfaces that balance the need for speed and precision.</p>
         </section>
-        <section id="predictive-model">
-          <h2>Predictive Model</h2>
-          <p>
+        <section id="predictive-model" class="grid__section">
+          <h2 class="grid__section-heading">Predictive Model</h2>
+          <p class="grid__section-text">
             Fitts's Law provides a predictive model for estimating the time required for a user to complete a pointing
             task.
             This model uses logarithmic functions to relate target size and distance to movement time. Designers can
@@ -105,9 +118,10 @@
             interface. By adjusting these factors, designers can reduce movement time and enhance the user experience.
           </p>
         </section>
-        <section id="logarithmic">
-          <h2>Logarithmic Relationship</h2>
-          <p>The Law follows a logarithmic relationship, meaning that doubling the target's size doesn't halve the
+        <section id="logarithmic" class="grid__section">
+          <h2 class="grid__section-heading">Logarithmic Relationship</h2>
+          <p class="grid__section-text">The Law follows a logarithmic relationship, meaning that doubling the target's
+            size doesn't halve the
             movement
             time.
             Instead, the impact of target size diminishes as it grows larger. This logarithmic nature is a key insight
@@ -116,18 +130,20 @@
             diminishing
             returns of continuously increasing target size.</p>
         </section>
-        <section id="practical-applications">
-          <h2>Practical Applications</h2>
-          <p> In practice, Fitts's Law plays a crucial role in user interface design. It guides designers in determining
+        <section id="practical-applications" class="grid__section">
+          <h2 class="grid__section-heading">Practical Applications</h2>
+          <p class="grid__section-text"> In practice, Fitts's Law plays a crucial role in user interface design. It
+            guides designers in determining
             the
             oof interactive elements like buttons and icons. By adhering to the principles of
             Fitts's
             Law, designers create interfaces that are both efficient and user-friendly, reducing errors and user
             frustration.</p>
         </section>
-        <section id="constraints">
-          <h2>Constraints</h2>
-          <p>While Fitts's Law offers valuable insights, it's essential to consider various constraints when applying it
+        <section id="constraints" class="grid__section" class="grid__section">
+          <h2 class="grid__section-heading">Constraints</h2>
+          <p class="grid__section-text">While Fitts's Law offers valuable insights, it's essential to consider various
+            constraints when applying it
             to
             design. Factors such as user motor skills, device limitations, and user preferences can influence how the
             law
@@ -137,9 +153,10 @@
             that accommodate a diverse range of users.
           </p>
         </section>
-        <section id="user-experience">
-          <h2>Improving User Experience</h2>
-          <p>By applying Fitts's Law principles, designers can significantly improve the overall user experience.
+        <section id="user-experience" class="grid__section">
+          <h2 class="grid__section-heading">Improving User Experience</h2>
+          <p class="grid__section-text">By applying Fitts's Law principles, designers can significantly improve the
+            overall user experience.
             Interfaces
             that
             adhere to the law's guidelines are more efficient, reducing the cognitive load on users and minimizing the
@@ -147,9 +164,10 @@
             of errors during interactions. This, in turn, leads to more satisfied users and a more successful product.
           </p>
         </section>
-        <section id="extensions">
-          <h2>Extensions</h2>
-          <p>Fitts's Law continues to evolve and find relevance in emerging technologies. Its principles have been
+        <section id="extensions" class="grid__section">
+          <h2 class="grid__section-heading">Extensions</h2>
+          <p class="grid__section-text">Fitts's Law continues to evolve and find relevance in emerging technologies. Its
+            principles have been
             extended
             to
             ttions, multi-modal interfaces, and novel input methods like touchscreens and voice
@@ -157,9 +175,10 @@
             landscape of
             HCI.</p>
         </section>
-        <section id="validation">
-          <h2>Empirical Validation</h2>
-          <p>Fitts's Law isn't just a theoretical concept; it's been extensively validated through empirical studies and
+        <section id="validation" class="grid__section">
+          <h2 class="grid__section-heading">Empirical Validation</h2>
+          <p class="grid__section-text">Fitts's Law isn't just a theoretical concept; it's been extensively validated
+            through empirical studies and
             real-world applications. Researchers and designers alike rely on the law's principles to create interfaces
             that are both efficient and user-centric. Its enduring influence is a testament to its empirical validity
             and
