@@ -1,5 +1,65 @@
+// CSS Reset
+html,
 body,
-html {
-  padding: 0;
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li,
+img,
+article,
+details,
+figure,
+figcaption,
+footer,
+header,
+nav,
+output,
+section,
+summary {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
 }
