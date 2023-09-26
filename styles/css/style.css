@@ -71,7 +71,6 @@ img {
   --blue-clr: #0872A7;
   --light-clr: #F2F2F2;
   --white-clr: #FFFFFF;
-  --gray-clr: #807E7E;
   --dark-gray-clr: #555454;
   --black-clr: #3e3a3a;
 }
@@ -263,7 +262,7 @@ html {
   min-width: max-content;
 }
 .header__navbar-item a {
-  color: var(--gray-clr);
+  color: var(--dark-gray-clr);
   text-decoration: none;
   font-weight: 500;
 }
@@ -287,7 +286,7 @@ html {
   text-decoration: none;
 }
 
-:is(h1, h2, h3):hover .anchor::before {
+:is(h1, h2, h3):focus-within .anchor::before, :is(h1, h2, h3):hover .anchor::before {
   content: "#";
 }
 
@@ -303,7 +302,7 @@ html {
   transition: transform 250ms ease-in-out;
 }
 .toc__summary {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   cursor: pointer;
   list-style-type: none;

@@ -5,8 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitts's Law - Understanding Human-Computer Interaction</title>
+  <meta name="description"
+    content="Learn about Fitts's Law, a fundamental principle in human-computer interaction (HCI) and ergonomics that describes the relationship between target size, distance, and interaction time.">
+  <meta name="keywords" content="Fitts's Law, HCI, human-computer interaction, ergonomics, user interface design">
+  <meta name="author" content="Carlos Zamora">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="canonical" href="https://https://carloszamora14.github.io/fitts-law">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -15,8 +26,8 @@
       <div>
         <h1 class="header__title header__title--index">
           Fitts's Law
-          <span></span>
-          <span></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </h1>
         <p class="header__subtitle">Understanding Human-Computer Interaction</p>
       </div>
@@ -42,19 +53,30 @@
     <div class="toc__content">
       <nav>
         <ul class="toc__list">
-          <li><a href="#what-is" class="toc__list-link">What is Fitts's Law?</a></li>
-          <li><a href="#key-concepts" class="toc__list-link">Key Concepts</a></li>
+          <li><a href="#what-is" aria-label="Go to the What is Fitts's law? section" class="toc__list-link">What is
+              Fitts's Law?</a></li>
+          <li><a href="#key-concepts" aria-label="Go to the Key concepts section" class="toc__list-link">Key
+              Concepts</a></li>
           <li>
-            <a href="#more-details" class="toc__list-link">More details on Fitts's Law</a>
+            <a href="#more-details" aria-label="Go to the More details on Fitts's law section"
+              class="toc__list-link">More details on Fitts's Law</a>
             <ul class="toc__sublist">
-              <li><a href="#speed-accuracy" class="toc__list-link">Speed-Accuracy Trade-Off</a></li>
-              <li><a href="#predictive-model" class="toc__list-link">Predictive Model</a></li>
-              <li><a href="#logarithmic" class="toc__list-link">Logarithmic Relationship</a></li>
-              <li><a href="#practical-applications" class="toc__list-link">Practical Applications</a></li>
-              <li><a href="#constraints" class="toc__list-link">Constraints</a></li>
-              <li><a href="#user-experience" class="toc__list-link">Improving User Experience</a></li>
-              <li><a href="#extensions" class="toc__list-link">Extensions</a></li>
-              <li><a href="#validation" class="toc__list-link">Empirical Validation</a></li>
+              <li><a href="#speed-accuracy" aria-label="Go to the Speed-Accuracy Trade-Off subsection"
+                  class="toc__list-link">Speed-Accuracy Trade-Off</a></li>
+              <li><a href="#predictive-model" aria-label="Go to the Predictive model subsection"
+                  class="toc__list-link">Predictive Model</a></li>
+              <li><a href="#logarithmic" aria-label="Go to the Logarithmic relationship subsection"
+                  class="toc__list-link">Logarithmic Relationship</a></li>
+              <li><a href="#practical-applications" aria-label="Go to the Improving Practical applications subsection"
+                  class="toc__list-link">Practical Applications</a></li>
+              <li><a href="#constraints" aria-label="Go to the Constraints subsection"
+                  class="toc__list-link">Constraints</a></li>
+              <li><a href="#user-experience" aria-label="Go to the Improving User Experience subsection"
+                  class="toc__list-link">Improving User Experience</a></li>
+              <li><a href="#extensions" aria-label="Go to the Extensions subsection"
+                  class="toc__list-link">Extensions</a></li>
+              <li><a href="#validation" aria-label="Go to the Empirical Validation subsection"
+                  class="toc__list-link">Empirical Validation</a></li>
             </ul>
           </li>
         </ul>
@@ -67,7 +89,7 @@
       <div class="main-content__section__body">
         <h2 class="main-content__section__title">
           What is Fitts's Law?
-          <a class="anchor" href="#what-is"></a>
+          <a aria-hidden="true" tabindex="-1" class="anchor" href="#what-is" aria-label="Go to the What is Fitts's law? section"></a>
         </h2>
         <p class="main-content__section__paragraph">
           Fitts's Law is a fundamental concept in human-computer interaction (HCI) that revolutionized the way designers
@@ -81,14 +103,15 @@
         </p>
       </div>
       <figure class="main-content__section__figure">
-        <img src="./images/fitts-law.jpg" class="main-content__section__img">
+        <img src="./images/fitts-law.jpg" class="main-content__section__img" witdh="100%" heigth="auto"
+          alt="A hand resting on a table while holding a pencil and there is a target area labeled on a table some distance away from the hand">
       </figure>
     </section>
     <section id="key-concepts" class="main-content__section">
       <div class="main-content__section__body">
         <h2 class="main-content__section__title">
           Key Concepts
-          <a class="anchor" href="#key-concepts"></a>
+          <a aria-hidden="true" tabindex="-1" class="anchor" href="#key-concepts" aria-label="Go to the Key concepts section"></a>
         </h2>
         <p class="main-content__section__paragraph">
           At the core of Fitts's Law are two key concepts: the "Index of Difficulty" (ID) and "Movement Time" (MT). ID
@@ -105,24 +128,26 @@
       </div>
       <div class="main-content__section__images-container">
         <figure class="main-content__section__figure">
-          <img src="./images/formula-id.png" class="main-content__section__img">
+          <img src="./images/formula-id.png" class="main-content__section__img" witdh="100%" heigth="auto"
+            alt="Index of difficulty equals logarithm base 2 of the cocient of two times the distance divided by width">
         </figure>
         <figure class="main-content__section__figure">
-          <img src="./images/formula-mt.png" class="main-content__section__img">
+          <img src="./images/formula-mt.png" class="main-content__section__img" witdh="100%" heigth="auto"
+            alt="The movement time is equal to the constant 'a' plus the product of the constant 'b' times the index of difficulty">
         </figure>
       </div>
     </section>
     <section id="more-details">
       <h2 class="main-content__section__title">
         More details on Fitts's Law
-        <a class="anchor" href="#more-details"></a>
+        <a aria-hidden="true" tabindex="-1" class="anchor" href="#more-details" aria-label="Go to the More details on Fitts's law section"></a>
       </h2>
       <div class="grid">
         <section id="speed-accuracy" class="grid__section">
-          <h2 class="grid__section-heading">
+          <h3 class="grid__section-heading">
             Speed-Accuracy Trade-Off
-            <a class="anchor" href="#speed-accuracy"></a>
-          </h2>
+            <a aria-hidden="true" tabindex="-1" class="anchor" href="#speed-accuracy" aria-label="Go to the Speed-Accuracy Trade-Off subsection"></a>
+          </h3>
           <p class="grid__section-text">One of the critical implications of Fitts's Law is the trade-off between speed
             and accuracy. It highlights
             that
@@ -135,10 +160,10 @@
             trade-off is central to designing interfaces that balance the need for speed and precision.</p>
         </section>
         <section id="predictive-model" class="grid__section">
-          <h2 class="grid__section-heading">
+          <h3 class="grid__section-heading">
             Predictive Model
-            <a class="anchor" href="#predictive-model"></a>
-          </h2>
+            <a aria-hidden="true" tabindex="-1" class="anchor" href="#predictive-model" aria-label="Go to the Predictive model subsection"></a>
+          </h3>
           <p class="grid__section-text">
             Fitts's Law provides a predictive model for estimating the time required for a user to complete a pointing
             task.
@@ -150,10 +175,10 @@
           </p>
         </section>
         <section id="logarithmic" class="grid__section">
-          <h2 class="grid__section-heading">
+          <h3 class="grid__section-heading">
             Logarithmic Relationship
-            <a class="anchor" href="#logarithmic"></a>
-          </h2>
+            <a aria-hidden="true" tabindex="-1" class="anchor" href="#logarithmic" aria-label="Go to the Logarithmic relationship subsection"></a>
+          </h3>
           <p class="grid__section-text">The Law follows a logarithmic relationship, meaning that doubling the target's
             size doesn't halve the
             movement
@@ -165,10 +190,11 @@
             returns of continuously increasing target size.</p>
         </section>
         <section id="practical-applications" class="grid__section">
-          <h2 class="grid__section-heading">
+          <h3 class="grid__section-heading">
             Practical Applications
-            <a class="anchor" href="#practical-applications"></a>
-          </h2>
+            <a aria-hidden="true" tabindex="-1" class="anchor" href="#practical-applications"
+              aria-label="Go to the Improving Practical applications subsection"></a>
+          </h3>
           <p class="grid__section-text"> In practice, Fitts's Law plays a crucial role in user interface design. It
             guides designers in determining
             the
@@ -178,10 +204,10 @@
             frustration.</p>
         </section>
         <section id="constraints" class="grid__section" class="grid__section">
-          <h2 class="grid__section-heading">
+          <h3 class="grid__section-heading">
             Constraints
-            <a class="anchor" href="#constraints"></a>
-          </h2>
+            <a aria-hidden="true" tabindex="-1" class="anchor" href="#constraints" aria-label="Go to the Constraints subsection"></a>
+          </h3>
           <p class="grid__section-text">While Fitts's Law offers valuable insights, it's essential to consider various
             constraints when applying it
             to
@@ -194,10 +220,10 @@
           </p>
         </section>
         <section id="user-experience" class="grid__section">
-          <h2 class="grid__section-heading">
+          <h3 class="grid__section-heading">
             Improving User Experience
-            <a class="anchor" href="#user-experience"></a>
-          </h2>
+            <a aria-hidden="true" tabindex="-1" class="anchor" href="#user-experience" aria-label="Go to the Improving User Experience subsection"></a>
+          </h3>
           <p class="grid__section-text">By applying Fitts's Law principles, designers can significantly improve the
             overall user experience.
             Interfaces
@@ -208,10 +234,10 @@
           </p>
         </section>
         <section id="extensions" class="grid__section">
-          <h2 class="grid__section-heading">
+          <h3 class="grid__section-heading">
             Extensions
-            <a class="anchor" href="#extensions"></a>
-          </h2>
+            <a aria-hidden="true" tabindex="-1" class="anchor" href="#extensions" aria-label="Go to the Extensions subsection"></a>
+          </h3>
           <p class="grid__section-text">Fitts's Law continues to evolve and find relevance in emerging technologies. Its
             principles have been
             extended
@@ -222,10 +248,10 @@
             HCI.</p>
         </section>
         <section id="validation" class="grid__section">
-          <h2 class="grid__section-heading">
+          <h3 class="grid__section-heading">
             Empirical Validation
-            <a class="anchor" href="#validation"></a>
-          </h2>
+            <a aria-hidden="true" tabindex="-1" class="anchor" href="#validation" aria-label="Go to the Empirical Validation subsection"></a>
+          </h3>
           <p class="grid__section-text">Fitts's Law isn't just a theoretical concept; it's been extensively validated
             through empirical studies and
             real-world applications. Researchers and designers alike rely on the law's principles to create interfaces
@@ -242,7 +268,7 @@
       <nav class="footer__socials">
         <ul>
           <li>
-            <a href="https://github.com/CarlosZamora14">
+            <a href="https://github.com/CarlosZamora14" aria-label="Visit the author Github page">
               <svg class="footer__socials-svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
