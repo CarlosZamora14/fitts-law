@@ -13,7 +13,11 @@
   <header class="header">
     <div class="container header__content">
       <div>
-        <h1 class="header__title">Fitts's Law</h1>
+        <h1 class="header__title header__title--index">
+          Fitts's Law
+          <span></span>
+          <span></span>
+        </h1>
         <p class="header__subtitle">Understanding Human-Computer Interaction</p>
       </div>
       <nav class="header__navbar">
@@ -26,26 +30,31 @@
   </header>
 
 
-  <details class="container">
-    <summary>
-      <h2>Table of contents</h2>
+  <details class="container toc" open>
+    <summary class="toc__summary">
+      <h2 class="toc__title">Table of contents</h2>
+      <svg class="toc__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M24.7744 19.9232C24.0768 20.6368 23.1056 20.6928 22.2528 19.9232L16 13.928L9.7472 19.9232C8.8944 20.6928 7.9216 20.6368 7.2288 19.9232C6.5312 19.2112 6.576 18.008 7.2288 17.3392C7.8784 16.6704 14.7408 10.136 14.7408 10.136C14.9042 9.96662 15.1001 9.83192 15.3167 9.73991C15.5333 9.64791 15.7663 9.60049 16.0016 9.60049C16.2369 9.60049 16.4699 9.64791 16.6865 9.73991C16.9031 9.83192 17.099 9.96662 17.2624 10.136C17.2624 10.136 24.1216 16.6704 24.7744 17.3392C25.4288 18.008 25.472 19.2112 24.7744 19.9232Z"
+          fill="#AA4499" />
+      </svg>
     </summary>
-    <div>
+    <div class="toc__content">
       <nav>
-        <ul>
-          <li><a href="#what-is">What is Fitts's Law?</a></li>
-          <li><a href="#key-concepts">Key Concepts</a></li>
+        <ul class="toc__list">
+          <li><a href="#what-is" class="toc__list-link">What is Fitts's Law?</a></li>
+          <li><a href="#key-concepts" class="toc__list-link">Key Concepts</a></li>
           <li>
-            <a href="#more-details">More details on Fitts's Law</a>
-            <ul>
-              <li><a href="#speed-accuracy">Speed-Accuracy Trade-Off</a></li>
-              <li><a href="#predictive-model">Predictive Model</a></li>
-              <li><a href="#logarithmic">Logarithmic Relationship</a></li>
-              <li><a href="#practical-applications">Practical Applications</a></li>
-              <li><a href="#constraints">Constraints</a></li>
-              <li><a href="#user-experience">Improving User Experience</a></li>
-              <li><a href="#extensions">Extensions</a></li>
-              <li><a href="#validation">Empirical Validation</a></li>
+            <a href="#more-details" class="toc__list-link">More details on Fitts's Law</a>
+            <ul class="toc__sublist">
+              <li><a href="#speed-accuracy" class="toc__list-link">Speed-Accuracy Trade-Off</a></li>
+              <li><a href="#predictive-model" class="toc__list-link">Predictive Model</a></li>
+              <li><a href="#logarithmic" class="toc__list-link">Logarithmic Relationship</a></li>
+              <li><a href="#practical-applications" class="toc__list-link">Practical Applications</a></li>
+              <li><a href="#constraints" class="toc__list-link">Constraints</a></li>
+              <li><a href="#user-experience" class="toc__list-link">Improving User Experience</a></li>
+              <li><a href="#extensions" class="toc__list-link">Extensions</a></li>
+              <li><a href="#validation" class="toc__list-link">Empirical Validation</a></li>
             </ul>
           </li>
         </ul>
@@ -56,7 +65,10 @@
   <main class="main-content container">
     <section id="what-is" class="main-content__section">
       <div class="main-content__section__body">
-        <h2 class="main-content__section__title">What is Fitts's Law?</h2>
+        <h2 class="main-content__section__title">
+          What is Fitts's Law?
+          <a class="anchor" href="#what-is"></a>
+        </h2>
         <p class="main-content__section__paragraph">
           Fitts's Law is a fundamental concept in human-computer interaction (HCI) that revolutionized the way designers
           think about user interface design. Developed by psychologist Paul Fitts in 1954, this law provides a
@@ -74,7 +86,10 @@
     </section>
     <section id="key-concepts" class="main-content__section">
       <div class="main-content__section__body">
-        <h2 class="main-content__section__title">Key Concepts</h2>
+        <h2 class="main-content__section__title">
+          Key Concepts
+          <a class="anchor" href="#key-concepts"></a>
+        </h2>
         <p class="main-content__section__paragraph">
           At the core of Fitts's Law are two key concepts: the "Index of Difficulty" (ID) and "Movement Time" (MT). ID
           is
@@ -97,11 +112,17 @@
         </figure>
       </div>
     </section>
-    <section>
-      <h2 id="more-details" class="main-content__section__title">More details on Fitts's Law</h2>
+    <section id="more-details">
+      <h2 class="main-content__section__title">
+        More details on Fitts's Law
+        <a class="anchor" href="#more-details"></a>
+      </h2>
       <div class="grid">
         <section id="speed-accuracy" class="grid__section">
-          <h2 class="grid__section-heading">Speed-Accuracy Trade-Off</h2>
+          <h2 class="grid__section-heading">
+            Speed-Accuracy Trade-Off
+            <a class="anchor" href="#speed-accuracy"></a>
+          </h2>
           <p class="grid__section-text">One of the critical implications of Fitts's Law is the trade-off between speed
             and accuracy. It highlights
             that
@@ -114,7 +135,10 @@
             trade-off is central to designing interfaces that balance the need for speed and precision.</p>
         </section>
         <section id="predictive-model" class="grid__section">
-          <h2 class="grid__section-heading">Predictive Model</h2>
+          <h2 class="grid__section-heading">
+            Predictive Model
+            <a class="anchor" href="#predictive-model"></a>
+          </h2>
           <p class="grid__section-text">
             Fitts's Law provides a predictive model for estimating the time required for a user to complete a pointing
             task.
@@ -126,7 +150,10 @@
           </p>
         </section>
         <section id="logarithmic" class="grid__section">
-          <h2 class="grid__section-heading">Logarithmic Relationship</h2>
+          <h2 class="grid__section-heading">
+            Logarithmic Relationship
+            <a class="anchor" href="#logarithmic"></a>
+          </h2>
           <p class="grid__section-text">The Law follows a logarithmic relationship, meaning that doubling the target's
             size doesn't halve the
             movement
@@ -138,7 +165,10 @@
             returns of continuously increasing target size.</p>
         </section>
         <section id="practical-applications" class="grid__section">
-          <h2 class="grid__section-heading">Practical Applications</h2>
+          <h2 class="grid__section-heading">
+            Practical Applications
+            <a class="anchor" href="#practical-applications"></a>
+          </h2>
           <p class="grid__section-text"> In practice, Fitts's Law plays a crucial role in user interface design. It
             guides designers in determining
             the
@@ -148,7 +178,10 @@
             frustration.</p>
         </section>
         <section id="constraints" class="grid__section" class="grid__section">
-          <h2 class="grid__section-heading">Constraints</h2>
+          <h2 class="grid__section-heading">
+            Constraints
+            <a class="anchor" href="#constraints"></a>
+          </h2>
           <p class="grid__section-text">While Fitts's Law offers valuable insights, it's essential to consider various
             constraints when applying it
             to
@@ -161,7 +194,10 @@
           </p>
         </section>
         <section id="user-experience" class="grid__section">
-          <h2 class="grid__section-heading">Improving User Experience</h2>
+          <h2 class="grid__section-heading">
+            Improving User Experience
+            <a class="anchor" href="#user-experience"></a>
+          </h2>
           <p class="grid__section-text">By applying Fitts's Law principles, designers can significantly improve the
             overall user experience.
             Interfaces
@@ -172,7 +208,10 @@
           </p>
         </section>
         <section id="extensions" class="grid__section">
-          <h2 class="grid__section-heading">Extensions</h2>
+          <h2 class="grid__section-heading">
+            Extensions
+            <a class="anchor" href="#extensions"></a>
+          </h2>
           <p class="grid__section-text">Fitts's Law continues to evolve and find relevance in emerging technologies. Its
             principles have been
             extended
@@ -183,7 +222,10 @@
             HCI.</p>
         </section>
         <section id="validation" class="grid__section">
-          <h2 class="grid__section-heading">Empirical Validation</h2>
+          <h2 class="grid__section-heading">
+            Empirical Validation
+            <a class="anchor" href="#validation"></a>
+          </h2>
           <p class="grid__section-text">Fitts's Law isn't just a theoretical concept; it's been extensively validated
             through empirical studies and
             real-world applications. Researchers and designers alike rely on the law's principles to create interfaces
@@ -201,7 +243,8 @@
         <ul>
           <li>
             <a href="https://github.com/CarlosZamora14">
-              <svg class="footer__socials-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="footer__socials-svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M16.0347 2.66663C8.68936 2.66663 2.73602 8.61996 2.73602 15.9653C2.73602 21.84 6.54536 26.8253 11.8307 28.5853C12.496 28.7053 12.736 28.296 12.736 27.944C12.736 27.628 12.7254 26.7906 12.7214 25.6826C9.02136 26.4853 8.24002 23.8986 8.24002 23.8986C7.63736 22.3626 6.76402 21.9533 6.76402 21.9533C5.55736 21.128 6.85602 21.1466 6.85602 21.1466C8.19202 21.24 8.89202 22.5173 8.89202 22.5173C10.0787 24.5493 12.0067 23.9626 12.7614 23.6226C12.8827 22.7626 13.2294 22.176 13.608 21.844C10.656 21.5093 7.55202 20.368 7.55202 15.2706C7.55202 13.8213 8.07069 12.632 8.91736 11.704C8.78269 11.3666 8.32269 10.0133 9.04936 8.18396C9.04936 8.18396 10.1654 7.82529 12.7054 9.54529C13.7901 9.25019 14.9091 9.09955 16.0334 9.09729C17.1576 9.09912 18.2767 9.24976 19.3614 9.54529C21.9027 7.82396 23.0174 8.18396 23.0174 8.18396C23.744 10.0133 23.288 11.3666 23.1494 11.704C24.0027 12.632 24.5147 13.82 24.5147 15.2706C24.5147 20.3813 21.408 21.504 18.4454 21.8333C18.9187 22.244 19.3454 23.0546 19.3454 24.2946C19.3454 26.0733 19.3294 27.508 19.3294 27.944C19.3294 28.3 19.5667 28.7133 20.2454 28.5826C25.528 26.82 29.3334 21.8386 29.3334 15.9653C29.3334 8.61996 23.38 2.66663 16.0347 2.66663Z"
                   fill="#342F2F" />

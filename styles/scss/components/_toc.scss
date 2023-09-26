@@ -1,16 +1,81 @@
-details {
-  padding: 1rem;
+.toc {
+  margin-top: 1rem;
 
-  >summary {
+  &[open] {
+    .toc__svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__svg {
+    width: var(--huge-fs);
+    height: auto;
+    transition: transform 250ms ease-in-out;
+  }
+
+  &__summary {
+    display: flex;
+    align-items: center;
     cursor: pointer;
     list-style-type: none;
 
     &::-webkit-details-marker {
       display: none;
     }
+  }
 
-    h2 {
-      display: inline;
+  &__title {
+    font-size: var(--huge-fs);
+    font-weight: 700;
+  }
+
+  &__list {
+    >* {
+      margin-top: 0.375rem;
+    }
+
+    &-link {
+      color: var(--dark-gray-clr);
+      text-decoration: none;
+      font-size: var(--mini-fs);
+
+      &:hover,
+      &:focus {
+        color: var(--blue-clr);
+      }
+    }
+  }
+
+  &__sublist {
+    position: relative;
+    padding-left: 1rem;
+
+    >* {
+      margin-top: 0.25rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background-color: var(--yellow-clr);
+      border-radius: 1rem;
     }
   }
 }
+
+// <details class="container toc">
+//     <summary class="toc__summary">
+//       <h2 class="toc__title">Table of contents</h2>
+//     </summary>
+//     <div class="toc__content">
+//       <nav>
+//         <ul class="toc__list">
+//           <li class="toc_list-item"><a href="#what-is">What is Fitts's Law?</a></li>
+//           <li class="toc_list-item"><a href="#key-concepts">Key Concepts</a></li>
+//           <li class="toc_list-item">
+//             <a href="#more-details">More details on Fitts's Law</a>
+//             <ul class="toc__sublist">

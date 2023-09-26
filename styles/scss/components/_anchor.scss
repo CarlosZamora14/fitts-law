@@ -1,0 +1,8 @@
+.anchor {
+  color: var(--purple-clr);
+  text-decoration: none;
+}
+
+:is(h1, h2, h3):hover .anchor::before {
+  content: '#';
+}

@@ -1,3 +1,36 @@
+@mixin add-decoration {
+  span {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 3rem;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 0.75rem;
+      border-radius: 1rem;
+    }
+
+    &:nth-child(1) {
+      order: -1;
+      margin-right: 0.375rem;
+
+      &::before {
+        background-color: var(--yellow-clr);
+      }
+    }
+
+    &:nth-child(2) {
+      margin-left: 0.375rem;
+
+      &::before {
+        background-color: var(--pink-clr);
+      }
+    }
+  }
+}
+
 .header {
   background-color: var(--light-clr);
   padding: 1rem 0;
@@ -16,8 +49,67 @@
   }
 
   &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     font-size: var(--enormous-fs);
     font-weight: 700;
+
+    &--index {
+      @media only screen and (min-width: 14rem) and (max-width: 48rem) {
+        @include add-decoration;
+      }
+    }
+
+    &--about {
+      @media only screen and (min-width: 20rem) and (max-width: 48rem) {
+        @include add-decoration;
+      }
+    }
+
+    @media only screen and (min-width: 48rem) {
+      justify-content: flex-start;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 0.375rem;
+        margin-left: 0.375rem;
+
+        &::before,
+        &::after {
+          content: '';
+          width: 3rem;
+          height: 0.75rem;
+          border-radius: 1rem;
+        }
+
+        &::after {
+          width: 1rem;
+        }
+
+        &:nth-child(1) {
+          &::before {
+            background-color: var(--green-clr);
+          }
+
+          &::after {
+            background-color: var(--yellow-clr);
+          }
+        }
+
+        &:nth-child(2) {
+          &::before {
+            background-color: var(--pink-clr);
+          }
+
+          &::after {
+            background-color: var(--blue-clr);
+          }
+        }
+      }
+    }
   }
 
   &__subtitle {
@@ -30,6 +122,8 @@
     margin-top: 1rem;
 
     &-item {
+      min-width: max-content;
+
       a {
         color: var(--gray-clr);
         text-decoration: none;
@@ -53,13 +147,3 @@
     }
   }
 }
-
-// <div class="container">
-//       <h1 class="header__title">Fitts's Law</h1>
-//       <p class="header__subtitle">Understanding Human-Computer Interaction</p>
-//       <nav class="header__navbar">
-//         <ul class="header__navbar-list">
-//           <li class="header__navbar-item"><a href="./index.html">Fitts's Law</a></li>
-//           <li class="header__navbar-item"><a href="./about.html">About</a></li>
-//         </ul>
-//       </nav>
