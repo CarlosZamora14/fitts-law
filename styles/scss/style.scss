@@ -1,2 +1,9 @@
 @forward './globals/';
 @forward './components/';
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--black-clr);
+}

@@ -1,8 +1,23 @@
-// Font size
-// 320px (eg: iPhone 4 & 5)	16px
-// 768px (eg: iPad portrait)	18px
-// 1024px (eg: iPad landscape)	19px
-// 1280px	20px
-// 1536px	21px
-// 1920px	23px
-// 2560px	25px
+:root {
+  --default-fs: 1rem;
+  --tiny-fs: calc(var(--default-fs) * 0.75);
+  --mini-fs: calc(var(--default-fs) * 0.8125);
+  --small-fs: calc(var(--default-fs) * 0.9125);
+  --big-fs: calc(var(--default-fs) * 1.0625);
+  --large-fs: calc(var(--default-fs) * 1.125);
+  --huge-fs: calc(var(--default-fs) * 1.25);
+  --svg-fs: calc(var(--default-fs) * 1.5);
+  --enormous-fs: calc(var(--default-fs) * 2);
+
+  @media screen and (min-width: 20rem) {
+    --default-fs: calc(1rem + 3 * ((100vw - 20rem) / 560));
+  }
+
+  @media screen and (min-width: 90rem) {
+    --default-fs: 1.375rem;
+  }
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+}

@@ -1,0 +1,16 @@
+.container {
+  padding: 0 max(0.25rem, 2vw);
+
+  @media only screen and (min-width: 20rem) {
+    width: 96%;
+    max-width: 90rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  @for $i from 1 through 5 {
+    @media only screen and (min-width: (20rem + 14rem * $i)) {
+      width: 96% - 1.2 * $i;
+    }
+  }
+}
