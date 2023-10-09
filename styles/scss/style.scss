@@ -1,6 +1,14 @@
 @forward './globals/';
 @forward './components/';
 
+html {
+  scroll-behavior: smooth;
+
+  @media (prefers-reduced-motion) {
+    scroll-behavior: unset;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
